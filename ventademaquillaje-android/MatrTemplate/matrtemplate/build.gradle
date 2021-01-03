@@ -1,0 +1,112 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+    defaultConfig {
+        applicationId 'com.gonzacap.ventademaquillaje'
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/proguard/androidx-annotations.pro'
+    }
+}
+
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0') {
+        // Necessary if your app targets Marshmallow
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+    androidTestImplementation('androidx.test:runner:1.1.0') {
+        // Necessary if your app targets Marshmallow
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+
+    // Clone library
+    api 'org.objenesis:objenesis:2.6'
+    api 'uk.com.robust-it:cloning:1.9.9'
+
+    //Firebase lib
+    api 'com.google.firebase:firebase-database:18.0.1'
+    api 'com.google.firebase:firebase-auth:18.1.0'
+    api 'com.google.firebase:firebase-core:17.0.1'
+    api 'com.google.firebase:firebase-iid:19.0.1'
+    api 'com.google.firebase:firebase-messaging:19.0.1'
+
+    //Unite test
+    androidTestImplementation 'junit:junit:4.12'
+
+    //maps-pdf
+    api 'com.google.android.gms:play-services-maps:17.0.0'
+    api 'com.github.barteksc:android-pdf-viewer:2.6.1'
+
+    //noinspection GradleCompatible
+    api 'androidx.core:core:1.0.0'
+    api 'androidx.palette:palette:1.0.0'
+    api 'androidx.mediarouter:mediarouter:1.0.0'
+    api 'com.google.android.material:material:1.0.0'
+    api 'androidx.recyclerview:recyclerview:1.0.0'
+    api 'androidx.cardview:cardview:1.0.0'
+    api 'androidx.exifinterface:exifinterface:1.0.0'
+    api 'androidx.annotation:annotation:1.0.0'
+    api 'androidx.annotation:annotation:1.1.0'
+
+    // Universal Image Loader
+    api 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+
+    // Gson for java/json serialization and deserialization
+    api 'com.google.code.gson:gson:2.8.2'
+    api 'com.squareup.okhttp3:okhttp:3.10.0'
+    api "com.squareup.okhttp3:okhttp-urlconnection:3.3.1"
+
+    //Async
+    api "org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.1.0"
+    api 'org.eclipse.paho:org.eclipse.paho.android.service:1.1.1'
+    api 'com.madgag.spongycastle:bcpkix-jdk15on:1.58.0.0'
+    api 'com.madgag.spongycastle:bcpg-jdk15on:1.58.0.0'
+
+    // Jackson Libraries
+    api 'com.fasterxml.jackson.core:jackson-core:2.9.4'
+    api 'com.fasterxml.jackson.core:jackson-annotations:2.9.4'
+    api 'com.fasterxml.jackson.core:jackson-databind:2.9.4'
+
+    api(name:'matrcore', ext:'aar')
+    api(name:'matrrulerunner', ext:'aar')
+    api(name:'matrui', ext:'aar')
+    api(name:'matrutil', ext:'aar')
+    api(name:'matrdatasource', ext:'aar')
+}
+//apply plugin: 'com.google.gms.google-services'

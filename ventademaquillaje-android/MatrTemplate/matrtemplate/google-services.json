@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "433082610877",
+    "firebase_url": "https://qafirebase-9b9d9.firebaseio.com",
+    "project_id": "qafirebase-9b9d9",
+    "storage_bucket": "qafirebase-9b9d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433082610877:android:acd6d8dff54abb0f",
+        "android_client_info": {
+          "package_name": "com.gonzacap.ventademaquillaje"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "433082610877-hj5mauhusir3qthktge42vaio2fatm0j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBbfClm41VVBweAhhLHhfud5ja8bEhld0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "433082610877-hj5mauhusir3qthktge42vaio2fatm0j.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "433082610877-4v8flbe30dv8nujl755elmdbo2sg0rp4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.qafirebase.push"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433082610877:android:e2b78e735af8b9cf",
+        "android_client_info": {
+          "package_name": "com.gonzacap.ventademaquillaje"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "433082610877-hj5mauhusir3qthktge42vaio2fatm0j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBbfClm41VVBweAhhLHhfud5ja8bEhld0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "433082610877-hj5mauhusir3qthktge42vaio2fatm0j.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "433082610877-4v8flbe30dv8nujl755elmdbo2sg0rp4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.qafirebase.push"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
